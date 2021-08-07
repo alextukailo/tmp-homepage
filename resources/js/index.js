@@ -362,7 +362,10 @@ const formValidate = () => {
     }
 }
 
-const formSend = async () => {
+const formSend = async (event) => {
+    // prevent form page navigation
+    if (event) { event.preventDefault(); }
+
     const message = document.getElementById('contact_message').value.trim()
     const ticketData = {
         source: 'ATLAS',
@@ -382,9 +385,6 @@ const formSend = async () => {
     .catch((error) => {
         // handle error while creating user ticket here
     });
-    
-    // prevent form page navigation
-    return false
 }
 
 const showPopup = () => {
