@@ -200,6 +200,15 @@ const themeMode = () => {
     toggle.onclick = () => {
         toggle.checked ? document.body.classList.add('dark_mode') : document.body.classList.remove('dark_mode')
     }
+
+    // read the initial theme from querystring, if avaliable:
+    const params = new URLSearchParams(window.location.search)
+    const theme = params.get('theme')
+    if (theme == 'dark')
+    {// the theme is dark mode (non-default), set the checkbox to toggled and add dark mode to the classlist:
+        document.body.classList.add('dark_mode')
+        toggle.checked = true
+    }
 }
 
 
