@@ -200,6 +200,15 @@ const themeMode = () => {
     toggle.onclick = () => {
         toggle.checked ? document.body.classList.add('dark_mode') : document.body.classList.remove('dark_mode')
     }
+
+    // read the initial theme from querystring, if avaliable:
+    const params = new URLSearchParams(window.location.search)
+    const theme = params.get('theme')
+    if (theme == 'dark')
+    {// the theme is dark mode (non-default), set the checkbox to toggled and add dark mode to the classlist:
+        document.body.classList.add('dark_mode')
+        toggle.checked = true
+    }
 }
 
 
@@ -362,7 +371,10 @@ const formValidate = () => {
     }
 }
 
-const formSend = async () => {
+const formSend = async (event) => {
+    // prevent form page navigation
+    if (event) { event.preventDefault(); }
+
     const message = document.getElementById('contact_message').value.trim()
     const ticketData = {
         source: 'ATLAS',
@@ -382,9 +394,6 @@ const formSend = async () => {
     .catch((error) => {
         // handle error while creating user ticket here
     });
-    
-    // prevent form page navigation
-    return false
 }
 
 const showPopup = () => {
