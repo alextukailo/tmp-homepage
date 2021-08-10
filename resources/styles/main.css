@@ -652,7 +652,7 @@ template {
 }
 
 .nav__title_mod:after {
-  content: 'TO HIT THE ORBIT';
+  content: 'TO HIT ORBIT';
   display: block;
   width: 100%;
   position: absolute;
@@ -1215,6 +1215,54 @@ template {
           transform: rotate(270deg);
   z-index: 99;
 }
+
+.file_expl:before {
+  content: '';
+  display: block;
+  top: 50%;
+  left: -4rem;
+  transform: translateY(-20.5rem);
+}
+
+.my_models:before {
+  content: '';
+  display: block;
+  top: 50%;
+  left: -4rem;
+  transform: translateY(-25.5rem);
+} 
+
+.sent_to_me:before {
+  content: '';
+  display: block;
+  top: 50%;
+  left: -4rem;
+  transform: translateY(-23.5rem);
+}
+
+.model_library:before {
+  content: '';
+  display: block;
+  top: 50%;
+  left: -4rem;
+  transform: translateY(-21.5rem);
+}
+
+.first_models:before {
+  content: '';
+  display: block;
+  top: 50%;
+  left: -4rem;
+  transform: translateY(-25.5rem);
+}
+
+.run_as_job:before {
+  content: '';
+  display: block;
+  transform: rotate(81deg);
+}
+
+
 
 .step_main {
   position: fixed;
