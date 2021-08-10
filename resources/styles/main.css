@@ -1165,7 +1165,7 @@ template {
   background-size: 2.7rem;
   position: absolute;
   top: -4rem;
-  left: 3%;
+  left: -7%;
   -webkit-transform: rotate(50deg);
       -ms-transform: rotate(50deg);
           transform: rotate(50deg);
@@ -1259,7 +1259,8 @@ template {
 .run_as_job:before {
   content: '';
   display: block;
-  transform: rotate(81deg);
+  transform: rotate(90deg);
+  left: 8%;
 }
 
 
