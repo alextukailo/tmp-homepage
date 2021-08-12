@@ -78,7 +78,7 @@ const onScrollChangeLinks = () => {
     function changeLinkState() {
         let index = sections.length;
 
-        while(--index && window.scrollY - 10 < sections[index].offsetTop) {}
+        while(--index && window.scrollY - 20 < sections[index].offsetTop) {}
         
         links.forEach((link) => link.classList.remove('active'));
         links[index].classList.add('active');
@@ -262,6 +262,7 @@ const responsivePage = () => {
                     thumbs[0].nextElementSibling.hidden = false
                     thumbs[1].hidden = false
                     thumbs[1].nextElementSibling.hidden = true
+                    
                 }
             }
 
@@ -273,6 +274,7 @@ const responsivePage = () => {
                     thumbs[1].nextElementSibling.hidden = false
                     thumbs[0].hidden = false
                     thumbs[0].nextElementSibling.hidden = true
+                    document.getElementById("video-demo").scrollIntoView({block: "start", behavior: "smooth"});
                 }
             }
         })

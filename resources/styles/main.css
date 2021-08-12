@@ -454,8 +454,9 @@ template {
 
 .button_sm {
   font-family: 'Montserrat';
-  max-width: 10.3rem;
-  padding: 1.2rem 1.6rem;
+  max-width: 103px;
+  font-size: 14px;
+  padding: 12px 16px;
   transition: all .3s;
 }
 
@@ -933,7 +934,7 @@ template {
   max-width: -moz-max-content;
   max-width: max-content;
   width: 100%;
-  padding: 1rem 2.4rem 9rem 2.4rem;
+  padding: 10px 24px 90px 24px;
   -webkit-box-shadow: 0px 6px 22px rgba(78, 62, 94, 0.25);
           box-shadow: 0px 6px 22px rgba(78, 62, 94, 0.25);
   border-radius: 4px;
@@ -949,21 +950,21 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .guide__name {
   font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.15px;
   color: var(--color-purple-100);
 }
 
 .guide__close {
   font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 12px;
+  line-height: 20px;
   color: var(--color-purple-100);
   cursor: pointer;
 }
@@ -976,10 +977,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--color-black-50);
-  margin-bottom: 3.2rem;
+  margin-bottom: 32px;
 }
 
 .guide__target {
@@ -993,19 +994,19 @@ template {
   width: -moz-max-content;
   width: max-content;
   font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
-  padding: .5rem;
-  border: .1rem solid var(--color-purple-100);
-  border-radius: .8rem;
+  padding: 5px;
+  border: 1px solid var(--color-purple-100);
+  border-radius: 8px;
   color: var(--color-purple-100);
 }
 
 .guide__icon {
-  max-width: .9rem;
+  max-width: 9px;
   width: 100%;
-  margin-right: .8rem;
+  margin-right: 8px;
 }
 
 .guide__link {
@@ -1016,51 +1017,51 @@ template {
 }
 
 .guide__logo {
-  max-width: 13.6rem;
+  max-width: 136px;
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 5rem;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .guide__heading_end {
   font-weight: 600;
-  font-size: 2.4rem !important;
-  line-height: 3.2rem;
-  margin-bottom: 4rem;
+  font-size: 24px !important;
+  line-height: 32px;
+  margin-bottom: 40px;
   color: var(--color-purple-100);
   text-align: center;
 }
 
 .guide__logo_end {
-  max-width: 13.6rem;
+  max-width: 136px;
   width: 100%;
   display: block;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 40px auto;
 }
 
 .guide__heading {
   font-weight: 600;
-  font-size: 4.8rem;
+  font-size: 48px;
   line-height: 120%;
-  letter-spacing: .2rem;
-  margin-bottom: 2.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
 }
 
 .guide__description {
   font-weight: normal;
-  font-size: 2.6rem;
-  line-height: 3.2rem;
+  font-size: 26px;
+  line-height: 32px;
   letter-spacing: 0.15px;
   color: var(--color-white-30);
-  margin-bottom: 4.8rem;
+  margin-bottom: 48px;
 }
 
 .guide__description_end {
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--color-black-50);
-  margin-bottom: 4rem;
+  margin-bottom: 40px;
 }
 
 .guide__content_full {
@@ -1072,20 +1073,20 @@ template {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 3.2rem;
+  bottom: 32px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .guide__button {
-  margin: 0 .7rem;
+  margin: 0 7px;
 }
 
 .guide__image {
-  max-width: 33rem;
+  max-width: 330px;
   width: 100%;
   display: block;
-  margin: 1.6rem auto 0 auto;
+  margin: 16px auto 0 auto;
 }
 
 .video-tour__thumb {
@@ -1115,37 +1116,37 @@ template {
 }
 
 .step_1 {
-  top: 2.2rem;
-  left: 6rem;
+  top: 22px;
+  left: 60px;
 }
 
 .step_1:before {
   content: '';
   display: block;
   background: url('../images/icons/hand.svg') no-repeat;
-  width: 2.7rem;
-  height: 2.7rem;
-  background-size: 2.7rem;
+  width: 27px;
+  height: 27px;
+  background-size: 27px;
   position: absolute;
   top: 40%;
-  left: -4rem;
+  left: -40px;
   z-index: 99;
 }
 
 
 .step_2 {
-  top: 6rem;
-  left: 10rem;
+  top: 60px;
+  left: 100px;
 }
 
 .step_2:before {
   content: '';
   display: block;
   background: url('../images/icons/hand.svg') no-repeat;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 27px;
+  height: 27px;
   position: absolute;
-  top: -4rem;
+  top: -40px;
   left: 3%;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -1154,19 +1155,19 @@ template {
 }
 
 .step_rin {
-  top: 6rem;
-  left: 10rem;
+  top: 60px;
+  left: 100px;
 }
 
 .step_rin:before {
   content: '';
   display: block;
   background: url('../images/icons/hand.svg') no-repeat;
-  width: 2.7rem;
-  height: 2.7rem;
-  background-size: 2.7rem;
+  width: 27px;
+  height: 27px;
+  background-size: 27px;
   position: absolute;
-  top: -4rem;
+  top: -40px;
   left: -7%;
   -webkit-transform: rotate(50deg);
       -ms-transform: rotate(50deg);
@@ -1175,16 +1176,16 @@ template {
 }
 
 .step_3 {
-  top: 6rem;
-  left: .8rem;
+  top: 60px;
+  left: 8px;
 }
 
 .step_3:before {
   content: '';
   display: block;
   background: url('../images/icons/hand.svg') no-repeat;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 27px;
+  height: 27px;
   position: absolute;
   top: -4rem;
   left: 0;
@@ -1196,7 +1197,7 @@ template {
 
 .step_4 {
   position: fixed;
-  bottom: 8.4rem;
+  bottom: 84px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -1207,10 +1208,10 @@ template {
   content: '';
   display: block;
   background: url('../images/icons/hand.svg') no-repeat;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 27px;
+  height: 27px;
   position: absolute;
-  bottom: -5rem;
+  bottom: -50px;
   left: 50%;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
@@ -1222,40 +1223,40 @@ template {
   content: '';
   display: block;
   top: 50%;
-  left: -4rem;
-  transform: translateY(-20.5rem);
+  left: -40px;
+  transform: translateY(-205px);
 }
 
 .my_models:before {
   content: '';
   display: block;
   top: 50%;
-  left: -4rem;
-  transform: translateY(-29rem);
+  left: -40px;
+  transform: translateY(-290px);
 } 
 
 .sent_to_me:before {
   content: '';
   display: block;
   top: 50%;
-  left: -4rem;
-  transform: translateY(-25.5rem);
+  left: -40px;
+  transform: translateY(-255px);
 }
 
 .model_library:before {
   content: '';
   display: block;
   top: 50%;
-  left: -4rem;
-  transform: translateY(-21.5rem);
+  left: -40px;
+  transform: translateY(-215px);
 }
 
 .first_models:before {
   content: '';
   display: block;
   top: 50%;
-  left: -4rem;
-  transform: translateY(-25.5rem);
+  left: -40px;
+  transform: translateY(-255px);
 }
 
 .run_as_job:before {
@@ -1272,7 +1273,7 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-bottom: 3.2rem;
+  padding-bottom: 32px;
 }
 
 .logo__guide {
@@ -1284,9 +1285,9 @@ template {
   .step_2:before,
   .step_3:before,
   .step_4:before {
-    width: 3.7rem;
-    height: 3.7rem;
-    background-size: 3.7rem;
+    width: 37px;
+    height: 37px;
+    background-size: 37px;
   }
 }
 
