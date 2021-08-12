@@ -220,6 +220,13 @@ const responsivePage = () => {
             document.documentElement.style.fontSize = '62.5%'
         }
     });
+    window.addEventListener("load", function () {
+        if(window.innerWidth <= 1440) {
+            document.documentElement.style.fontSize = window.innerWidth * 0.043 + '%'
+        } else {
+            document.documentElement.style.fontSize = '62.5%'
+        }
+    });
 }
 
 
