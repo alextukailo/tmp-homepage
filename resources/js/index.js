@@ -4,7 +4,8 @@
 
     var player,
     time_update_interval = 0;
-    //you need to add videoId from embered url
+    
+    //put id to videoId to player and player2 from embed video url
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('twomin', {
             width: 100 + '%',
@@ -30,16 +31,11 @@
     function onPlayerReady(e) {
         e.target.stopVideo();
     }
-    
    
-    function onPlayerStateChange(event) {
-        
-    }
+    function onPlayerStateChange(event) {}
 
     function initialize(){
-
         clearInterval(time_update_interval);
-
         time_update_interval = setInterval(function () {
         }, 1000);
     }
@@ -77,8 +73,7 @@ const onScrollChangeLinks = () => {
 
     function changeLinkState() {
         let index = sections.length;
-
-        while(--index && window.scrollY - 20 < sections[index].offsetTop) {}
+        while(--index && window.scrollY - sections[index].clientHeight * 2 / 3 < sections[index].offsetTop) {}
         
         links.forEach((link) => link.classList.remove('active'));
         links[index].classList.add('active');
