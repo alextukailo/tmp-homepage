@@ -9,7 +9,7 @@
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('twomin', {
             width: 100 + '%',
-            videoId: 'ukzFI9rgwfU',
+            videoId: 'lfa3lyQh0AM',
             playerVars: {
                 autoplay: 1
             },
@@ -20,7 +20,7 @@
         },);
         player2 = new YT.Player('demoVideo', {
             width: 100 + '%',
-            videoId: '7eh4d6sabA0',
+            videoId: 'QWD9MyrbRu4',
             events: {
                 onReady: initialize
             }
